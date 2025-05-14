@@ -388,7 +388,7 @@ header::after {
     color: #176179;
 }
 
-.skills button {
+button {
     background: #02487E;
     border-radius: 50px;
     color: #fff;
@@ -544,4 +544,7 @@ header::after {
      filter: brightness(0.8);
 }
 
-
+/* Contact section start from here */
+.contact {
+    gap: 5em;
+}
