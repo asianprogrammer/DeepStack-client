@@ -548,3 +548,14 @@ button {
 .contact {
     gap: 5em;
 }
+
+.contact .cover {
+    width: 100%;
+    max-width: 453px;
+    height: 523px;
+}
+
+.contact .cover img {
+    height: 100%;
+    object-fit: contain;
+}
