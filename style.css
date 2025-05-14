@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: Outfit;
-    src: url(./assets/fonts/Outfit-Thin.ttf);
+    src: url(./assets/fonts/Outfit-VariableFont_wght.ttf);
 }
 
 a, p, span, div, h1, h2, h3, article, section, header, footer, button {
@@ -27,17 +27,74 @@ body {
   font-family: Outfit, var(--default-font-family);
 }
 
-.dot {
-    width: 40px;
-    height: 40px;
-    border: solid 1px red;
-    border-radius: 2px;
-    margin: 0.5em;
+main {
+    position: relative;
+}
+
+.slider {
+    width: 100%;
+    aspect-ratio: 12 / 5;
+    overflow: hidden;
+    position: relative;
+    border-radius: 25px;
+    background: url(./assets/images/AXFIMNEqnzei.png) no-repeat;
+    background-size: cover;
+}
+
+.slider .slide {
+    width: 80%;
+    margin-left: 10%;
+    height: calc((90vw / 12) * 5);
+}
+
+.slider .slide .image {
+    width: 40%;
+    height: 100%;
+    margin-top: 5%;
+}
+
+.slider .slide .image img {
+    height: 90%;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+.slider .text {
+    color: #fff;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.slide-action-layout {
+    left: 10%;
+    bottom: 10%;
+    position: absolute;
+}
+
+.slide-action-layout .round-btn {
+    width: 2em;
+    height: 2em;
+    padding: 0.6em;
     cursor: pointer;
+    border-radius: 50%;
+    background: white;
+}
+
+#navigation_dots {
+    margin: 0 1em;
+}
+
+.dot {
     float: left;
+    width: 10px;
+    height: 10px;
+    margin: 0 0.5em;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #ffffff;
+    transition: all .3s ease;
 }
 
 .dot.active {
-    background: red;
-    border-radius: 4px;
+    background: #02487E;
 }
