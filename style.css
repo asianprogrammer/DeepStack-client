@@ -219,6 +219,25 @@ header::after {
     .cards {
         justify-content: center;
     }
+
+    .skills {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3em;
+    }
+
+    .skills article {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills .details-cards {
+        width: 100%;
+        overflow: auto;
+    }
 }
 
 .card.top {
