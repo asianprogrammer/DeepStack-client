@@ -25,6 +25,7 @@ button {
 body {
   margin: 5vw 2rem;
   font-family: Outfit, var(--default-font-family);
+  background: #C5D7DF;
 }
 
 main {
