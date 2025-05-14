@@ -36,7 +36,7 @@ main {
 /* Sliders section start from here */
 .slider {
     width: 100%;
-    aspect-ratio: 12 / 5;
+    height: 80vh;
     overflow: hidden;
     position: relative;
     border-radius: 25px;
@@ -266,6 +266,27 @@ header::after {
     .skills .details-cards {
         width: 100%;
         overflow: auto;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer a {
+        flex-wrap: wrap;
+        font-size: 1.1em;
+    }
+
+    footer section {
+        width: 100%;
+        margin: 0;
+        overflow: auto;
+    }
+
+    .static-text {
+        font-size: 1.5em;
     }
 }
 
@@ -580,12 +601,14 @@ button {
 }
 
 .contact .cover {
-    width: 100%;
+    width: 90%;
     max-width: 453px;
     height: 523px;
+    overflow: hidden;
 }
 
 .contact .cover img {
+    width: 100%;
     height: 100%;
     object-fit: contain;
 }
@@ -631,7 +654,7 @@ footer a {
 
 .end-mask {
     left: 0;
-    width: 90%;
+    width: 100%;
     margin-top: -3em;
     overflow-y: hidden;
     height: 150px;
@@ -642,6 +665,6 @@ footer a {
     width: 50%;
     height: 50%;
     left: 50%;
-    top: 100%;
+    top: 80%;
     transform: translateX(-50%);
 }
