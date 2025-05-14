@@ -243,7 +243,7 @@ header::after {
     padding: 0;
 }
 .card.top .banner img {
-    width: 110%;
+    width: 108%;
     height: 100%;
     object-fit: cover;
     margin-left: -5px;
@@ -348,3 +348,181 @@ header::after {
     display: flex;
     align-items: center;
 }
+
+.skills {
+    margin-top: 10%;
+}
+
+.skills article span {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    color: #02487E;
+    font-weight: bold;
+}
+
+.skills article h3 {
+    font-size: 3em;
+    color: #02487E;
+}
+
+.skills article p {
+    color: #176179;
+}
+
+.skills button {
+    background: #02487E;
+    border-radius: 50px;
+    color: #fff;
+    padding: 0.7em 2em;
+    font-size: 1.5em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+
+.card-text {
+    height: 433px;
+    width: 100px;
+    background: white;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.details-cards {
+    gap: 20px;
+}
+
+.card-item {
+    position: relative;
+    width: 100px;
+    height: 433px;
+    overflow: hidden;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Card Text */
+.card-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+/* Container Setup */
+.details-cards {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Each Card */
+.card-item {
+    position: relative;
+    width: 100px;
+    height: 433px;
+    overflow: hidden;
+    transition: width 0.4s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+/* Expand on Hover */
+.card-item:hover {
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Text Style */
+.card-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-text span {
+    transform: rotate(-90deg);
+    display: inline-block;
+    font-weight: bold;
+    font-size: 3em;
+    color: #02487E;
+}
+
+/* Tech Cover Hidden Initially */
+.tech-cover {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+    transform: scale(0.95);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.tech-cover .image-view {
+    width: 300px;
+    height: 100%;
+    position: relative;
+}
+
+.tech-cover .image-view img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tech-cover .text {
+    width: 80%;
+    padding: 0 10%;
+    position: absolute;
+    top: 1em;
+    z-index: 1111;
+    color: #fff;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
+.card-item:hover .card-text {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.9);
+}
+
+.card-item:hover .tech-cover {
+    opacity: 1;
+    pointer-events: all;
+    transform: scale(1);
+}
+
+.tech-cover .text {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-item:hover .image-view img {
+    transform: scale(1.1);
+     filter: brightness(0.8);
+}
+
+
