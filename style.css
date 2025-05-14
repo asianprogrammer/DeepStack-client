@@ -228,6 +228,16 @@ header::after {
     font-weight: 200;
 }
 
+.card .banner {
+    width: 100%;
+    height: 100%;
+}
+
+.card .banner img {
+    width: 100%;
+    object-fit: cover;
+}
+
 .effect {
     top: var(--t);
     left: var(--l);
