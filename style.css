@@ -203,13 +203,28 @@ header::after {
 
 .wder {
     right: 0;
-    width: 200px;
+    max-width: 200px;
     margin-top: 1em;
-    height: 300px;
+    max-height: 300px;
     position: absolute;
     background: url(./assets/images/wdr1.png) no-repeat;
     background-position: top right;
 }
+
+.wde {
+    top: var(--t);
+    left: var(--l);
+    right: var(--r);
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    margin-top: var(--mt) !important;
+    background: var(--b) no-repeat;
+    background-position: top right;
+    background-size: var(--sz);
+    z-index: -11;
+}
+
 
 .cards {
     flex-wrap: wrap;
@@ -561,6 +576,7 @@ button {
 /* Contact section start from here */
 .contact {
     gap: 5em;
+    margin-top: 3em;
 }
 
 .contact .cover {
