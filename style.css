@@ -26,6 +26,7 @@ body {
   margin: 5vw 2rem;
   font-family: Outfit, var(--default-font-family);
   background: #C5D7DF;
+  overflow-x: hidden;
 }
 
 main {
@@ -106,17 +107,18 @@ main {
 /* Nav section css started from here */
 
 nav {
+    left: 50%;
     height: 4em;
     z-index: 999;
     margin-top: -2em;
-    position: fixed;
     padding: 0 2em;
-    margin-left: 10%;
+    position: absolute;
     width: calc(80% - 2em);
     background: #ffffff;
     border-radius: 40px;
     overflow: hidden;
     box-sizing: border-box;
+    transform: translateX(-50%);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -149,4 +151,110 @@ nav a.active {
     color: #ffffff;
     background: #02487E;
     border-radius: 40px;
+}
+
+/* Nave style end here */
+/* Cards and rest details start from here */
+/* Second body container and all other style start from here */
+
+.body {
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+header {
+    color: #02487E;
+    position: relative;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+}
+
+header p {
+    font-weight: 200;
+    color: #176179;
+}
+
+header::before, 
+header::after {
+    top: -2em;
+    left: -5%;
+    content: '';
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    pointer-events: none;
+    background: url(./assets/images/wdl1.png) no-repeat;
+}
+
+.wder {
+    right: 0;
+    width: 200px;
+    margin-top: 1em;
+    height: 300px;
+    position: absolute;
+    background: url(./assets/images/wdr1.png) no-repeat;
+    background-position: top right;
+}
+
+
+.card {
+    height: 406px;
+    max-width: 350px;
+    width: fit-content;
+    background: white;
+    mask: url(./assets/icons/bottom.svg) center / contain no-repeat, linear-gradient(#000 0 0);
+    mask-size: 5em;
+    mask-position: -0.2% 100.2%;
+    mask-composite: exclude;
+    border-radius: 30px 30px 30px 0;
+}
+
+.card article {
+    margin: 2em;
+    color: #02487E;
+    padding-top: 2em;
+    text-transform: uppercase;
+}
+
+.card article p {
+    color: #176179;
+    margin: 0.2em 0;
+    font-weight: bold;
+}
+
+.card article span {
+    color: #176179;
+    font-weight: 200;
+}
+
+.effect {
+    top: var(--t);
+    left: var(--l);
+    right: var(--l);
+    width: 447px;
+    height: 425px;
+    opacity: 0.7;
+    z-index: -1111;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(50px);
+    pointer-events: none;
+    margin-left: var(--ml);
+    margin-top: var(--mt);
+    background-color: var(--bg);
+}
+
+.mask {
+    top: var(--t);
+    left: var(--l);
+    right: var(--r);
+    margin-top: var(--mt);
+    width: 447px;
+    height: 600px;
+    overflow: hidden;
+    position: absolute;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
 }
