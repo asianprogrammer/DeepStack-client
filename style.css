@@ -5,6 +5,11 @@
         "Source Han Sans CN", sans-serif;
 }
 
+@font-face {
+    font-family: Outfit;
+    src: url(./assets/fonts/Outfit-Thin.ttf);
+}
+
 a, p, span, div, h1, h2, h3, article, section, header, footer, button {
     margin: 0;
     padding: 0;
@@ -19,7 +24,9 @@ button {
 
 body {
   margin: 5vw 2rem;
+  font-family: Outfit, var(--default-font-family);
 }
+
 .dot {
     width: 40px;
     height: 40px;
