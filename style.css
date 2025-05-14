@@ -1,0 +1,22 @@
+a, p, span, div, h1, h2, h3, article, section, header, footer, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  margin: 5vw 2rem;
+}
+.dot {
+    width: 40px;
+    height: 40px;
+    border: solid 1px red;
+    border-radius: 2px;
+    margin: 0.5em;
+    cursor: pointer;
+    float: left;
+}
+
+.dot.active {
+    background: red;
+    border-radius: 4px;
+}
