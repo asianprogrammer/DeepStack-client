@@ -48,7 +48,21 @@ main {
 .slider .slide {
     width: 80%;
     margin-left: 10%;
+    position: relative;
+    z-index: 111111111 !important;
     height: calc((90vw / 12) * 5);
+}
+
+/* Slider static text */
+.static-text {
+    top: 30%;
+    left: 10%;
+    width: 40%;
+    color: #fff;
+    font-size: 3em;
+    z-index: 11;
+    font-weight: bolder;
+    position: absolute;
 }
 
 .slider .slide .image {
