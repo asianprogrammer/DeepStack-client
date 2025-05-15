@@ -404,6 +404,9 @@ header::after {
       transform: translateX(-50%);
       visibility: hidden;
     }
+    .details-cards {
+    	display: none !important;
+    }
 }
 
 .card.top {
