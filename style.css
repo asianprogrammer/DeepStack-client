@@ -51,7 +51,6 @@ main {
     position: relative;
     z-index: 111111111 !important;
     height: 70vh;
-    border: solid 1px red;
 }
 
 /* Slider static text */
@@ -300,14 +299,50 @@ header::after {
         width: 100%;
         max-height: 400px !important;
         border-radius: 0 !important;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
     }
+
+    .round-btn {
+        width: 1.5em !important;
+        height: 1.5em !important;
+    }
+
     .slider .slide {
         width: 100%;
-        padding: 0 !important;
-        margin: 0 !important;
+        height: 100%;
         max-height: 350px;
-        overflow: hidden;
+        margin: 0 !important;
+        padding: 0 !important;
         justify-content: center;
+    }
+
+    .slider .slide .image {
+        width: 100%;
+        height: 100vh;
+        max-height: 350px !important;
+    }
+
+    .slider .slide .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: top;
+    }
+
+    .static-text {
+        width: 90%;
+        left: 5%;
+        top: auto;
+        font-size: 1.1em;
+        bottom: 20% !important;
+        margin-left: 0 !important;
+    }
+
+    .slide-action-layout {
+        left: 0;
+        width: 100%;
+        justify-content: center;
+        bottom: 1em !important;
     }
 
     .skills,
