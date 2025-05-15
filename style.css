@@ -266,6 +266,10 @@ header::after {
         flex-direction: column;
         text-align: center;
     }
+    
+    .skills article h3 {
+      font-size: 2em !important;
+    }
 
     .skills .details-cards {
         width: 100%;
