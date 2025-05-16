@@ -407,11 +407,11 @@ header::after {
     .details-cards {
     	display: none !important;
     }
-    .footer-nav {
-    	flex-direction: column;
-    	align-items: flex-start;
+    footer section {
+    	flex-direction: column !important;
+    	align-items: flex-start !important;
     }
-    .footer-nav a {
+    footer section a {
     	margin: 0.5em 0;
     	font-size: 1em !important;
     }
@@ -770,13 +770,15 @@ footer a {
     font-size: 1.3em;
 }
 
-.social .icon {
-    width: 40px;
-    height: 40px;
+.social-icon {
+    width: 50px;
+    height: 50px;
     margin: 0 0.5em;
+    position: relative;
+    z-index: 111;
 }
 
-.social .icon {
+.social-icon img {
     width: 100%;
     height: 100%;
     object-fit: contain;
