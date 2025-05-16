@@ -407,6 +407,14 @@ header::after {
     .details-cards {
     	display: none !important;
     }
+    .footer-nav {
+    	flex-direction: column;
+    	align-items: flex-start;
+    }
+    .footer-nav a {
+    	margin: 0.5em 0;
+    	font-size: 1em !important;
+    }
 }
 
 .card.top {
