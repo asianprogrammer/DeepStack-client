@@ -391,7 +391,22 @@ header::after {
     }
     
     .mobile-view-menu {
-      display: inline-block;
+        width: 25px;
+        height: 25px;
+        padding: 0.6em;
+        border-radius: 50%;
+        display: inline-block;
+        transition: .3s ease;
+    }
+
+    .mobile-view-menu img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .mobile-view-menu:hover {
+        background: #e9e9e9dd;
     }
     
     .mobile-view-menu:hover ~ .nav-action  {
@@ -414,6 +429,11 @@ header::after {
       transform: translateX(-50%);
       visibility: hidden;
     }
+
+    .nav-action a {
+        width: 80%;
+    }
+    
     .details-cards {
     	display: none !important;
     }
