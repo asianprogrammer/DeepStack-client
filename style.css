@@ -338,8 +338,35 @@ header::after {
         overflow: auto;
     }
 
+        footer section {
+    	-webkit-box-orient: vertical !important;
+    	-webkit-box-direction: normal !important;
+    	    -ms-flex-direction: column !important;
+    	        flex-direction: column !important;
+    	-webkit-box-align: start !important;
+    	    -ms-flex-align: start !important;
+    	        align-items: flex-start !important;
+    }
+    
+    footer section a {
+    	margin: 0.5em 0;
+    	font-size: 1em !important;
+    }
+
     .static-text {
         font-size: 1.5em;
+    }
+
+    .details-cards {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center !important;
+            -ms-flex-pack: center !important;
+                justify-content: center !important;
+        -webkit-box-align: center !important;
+            -ms-flex-align: center !important;
+                align-items: center !important;
     }
 }
 
@@ -349,6 +376,8 @@ header::after {
     }
     #projects {
     	margin-top: 3em;
+        position: relative;
+        z-index: 11111;
     }
     #skills {
     	margin-top: 4em;
@@ -420,8 +449,15 @@ header::after {
     }
 
     .card {
-        width: 95%;
+        width: 100%;
+        overflow: hidden;
+        margin: 0 !important;
     }
+
+    .cards .card article {
+        margin: 0 1.5em;
+        margin-bottom: 1em;
+    } 
 
     .visit-site {
         width: 80% !important;
@@ -432,9 +468,19 @@ header::after {
         height: 30% !important;
     }
 
+    .cards .banner img {
+        height: 100% !important;
+    }
+
+    header::before, header::after {
+        display: none !important;
+    }
+
     .wder,
     .wde {
         max-width: 150px !important;
+        z-index: -1111 !important;
+        display: none !important;
     }
     
     .mobile-view-menu {
@@ -491,19 +537,6 @@ header::after {
     
     .details-cards {
     	display: none !important;
-    }
-    footer section {
-    	-webkit-box-orient: vertical !important;
-    	-webkit-box-direction: normal !important;
-    	    -ms-flex-direction: column !important;
-    	        flex-direction: column !important;
-    	-webkit-box-align: start !important;
-    	    -ms-flex-align: start !important;
-    	        align-items: flex-start !important;
-    }
-    footer section a {
-    	margin: 0.5em 0;
-    	font-size: 1em !important;
     }
 }
 
@@ -655,6 +688,10 @@ header::after {
 
 .skills {
     margin-top: 10%;
+}
+
+#skills {
+    max-width: 500px;
 }
 
 .skills article span {
@@ -950,9 +987,9 @@ footer a {
     left: 0;
     width: 100%;
     margin-top: -3em;
-    overflow-y: hidden;
     height: 150px;
     position: absolute;
+    overflow: hidden;
 }
 
 .blob-2 {
