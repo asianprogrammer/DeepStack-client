@@ -378,7 +378,6 @@ header::after {
   footer section {
     width: 100%;
     margin: 0;
-    overflow: auto;
   }
 
   footer section {
@@ -765,6 +764,12 @@ button {
   font-weight: bold;
   margin-top: 1em;
   text-transform: uppercase;
+  transition: all .2s ease;
+}
+
+button:hover {
+    background: #0260a8;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .card-text {
@@ -826,9 +831,6 @@ button {
 /* Container Setup */
 .details-cards {
   display: inline-block;
-  /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 /* Each Card */
@@ -1017,10 +1019,20 @@ footer a {
   margin: 0 1em;
   color: #02487e;
   font-weight: bold;
-  padding: 0.5em 1em;
+  padding: 0.5em 0;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.3em;
+  transition: all .3s ease;
+}
+
+footer a:hover {
+    color: #007bda;
+    transform: scale(1.3);
+}
+
+footer section:hover a:not(:hover) {
+    filter: blur(5px);
 }
 
 .social-icon {
@@ -1041,7 +1053,6 @@ footer a {
 .end-mask {
   left: 0;
   width: 100%;
-  margin-top: -3em;
   height: 150px;
   position: absolute;
   filter: blur(5px);
