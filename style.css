@@ -306,7 +306,9 @@ header::after {
 
     .wde,
     .wder {
-        transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+            -ms-transform: scale(0.5);
+                transform: scale(0.5);
     }
 
     .cards .card article {
@@ -418,7 +420,9 @@ header::after {
     }
 
     .right-drop {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+                transform: scale(1);
         background-size: 30%;
         margin-top: 3em !important;
     }
