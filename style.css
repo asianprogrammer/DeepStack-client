@@ -290,6 +290,14 @@ header::after {
     justify-content: center;
   }
 
+  .contact {
+    gap: 5em !important;
+  }
+
+  .contact .cover {
+    max-height: 400px !important;
+  }
+
   .card {
     width: 100%;
     overflow: hidden;
@@ -695,7 +703,7 @@ header::after {
   border-radius: 50%;
   -webkit-filter: blur(50px);
   filter: blur(50px);
-  /* pointer-events: none;  */
+  pointer-events: none; 
   margin-left: var(--ml);
   margin-top: var(--mt);
   background-color: var(--bg);
@@ -718,6 +726,7 @@ header::after {
   -ms-flex-align: center;
   align-items: center;
   pointer-events: none;
+  filter: blur(5px);
 }
 
 .skills {
@@ -942,6 +951,7 @@ button {
 .card-item:hover .tech-cover {
   opacity: 1;
   pointer-events: all;
+  cursor: pointer;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -970,14 +980,16 @@ button {
 .contact .cover {
   width: 90%;
   max-width: 453px;
-  height: 523px;
+  height: 500px;
   overflow: hidden;
   border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .contact .cover img {
   width: 110%;
   height: 110%;
+  margin-left: -5%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1032,6 +1044,7 @@ footer a {
   margin-top: -3em;
   height: 150px;
   position: absolute;
+  filter: blur(5px);
   overflow: hidden;
 }
 
