@@ -584,6 +584,20 @@ header::after {
 
     .nav-action a {
         width: 80%;
+        margin: 0 !important;
+        transition: all .3s ease;
+    }
+
+    .nav-action a:hover {
+        color: #fff;
+        border-radius: 30px;
+        background: #02487e;
+    }
+
+    .nav-action:hover a:not(:hover) {
+        filter: blur(2px);
+        color: #02487e;
+        background: transparent;
     }
 
     .details-cards {
