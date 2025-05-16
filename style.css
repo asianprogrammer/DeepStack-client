@@ -306,7 +306,7 @@ header::after {
 
     .wde,
     .wder {
-        display: none !important;
+        transform: scale(0.5);
     }
 
     .cards .card article {
@@ -413,8 +413,20 @@ header::after {
 
     header::before,
     header::after {
-        display: none !important;
+        margin-top: 1em;
+        margin-left: -3em;
     }
+
+    .right-drop {
+        transform: scale(1);
+        background-size: 30%;
+        margin-top: 3em !important;
+    }
+
+    .contact-drop {
+        margin-top: 40em !important;
+    }
+    
 }
 
 @media only screen and (max-width: 520px) {
@@ -512,16 +524,10 @@ header::after {
         height: 100% !important;
     }
 
-    header::before,
-    header::after {
-        display: none !important;
-    }
-
     .wder,
     .wde {
         max-width: 150px !important;
         z-index: -1111 !important;
-        display: none !important;
     }
 
     .mobile-view-menu {
@@ -1080,7 +1086,8 @@ footer section:hover a:not(:hover) {
     overflow: hidden;
 }
 
-.blob-2 {
+.blob-2,
+.blob-3 {
     width: 50%;
     height: 50%;
     left: 50%;
@@ -1088,4 +1095,15 @@ footer section:hover a:not(:hover) {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+}
+
+.blob-3 {
+    width: 600px;
+    height: 600px;
+    margin-top: -3em;
+    left: var(--l) !important;
+}
+
+.none {
+    display: none;
 }
